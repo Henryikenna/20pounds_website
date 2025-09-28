@@ -15,10 +15,10 @@ export default function FAQ() {
   return (
     <section id="faq" className="section bg-tpBlack">
       <div className="container-tight text-center">
-        <h2 className="text-center text-2xl font-semibold uppercase mb-2">
-          Frequently Asked <span className="font-dancingScript italic text-gold normal-case">Questions</span>
+        <h2 className="font-variant-small-caps text-3xl md:text-4xl tracking-wide text-cream font-bold">
+          Frequently Asked <span className="!font-dancingScript text-gold [font-variant-caps:normal]">Questions</span>
         </h2>
-        <p className="mt-1.5 text-xl text-tpGrey mb-10">
+        <p className="mt-1.5 text-base md:text-xl text-tpGrey mb-10">
           Everything You Need to Know Before Getting Started
         </p>
 

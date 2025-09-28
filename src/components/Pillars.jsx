@@ -15,8 +15,8 @@ export default function Pillars() {
     <section className="section">
       <div className="container-tight">
         <div className="text-center">
-          <h2 className="font-variant-small-caps text-3xl tracking-wide text-cream font-bold">What We <span className="!font-dancingScript text-gold [font-variant-caps:normal]">Do</span></h2>
-          <p className="mt-1.5 text-xl text-tpGrey">Our 3 Pillars for Building Entrepreneurs</p>
+          <h2 className="font-variant-small-caps text-3xl md:text-4xl tracking-wide text-cream font-bold">What We <span className="!font-dancingScript text-gold [font-variant-caps:normal]">Do</span></h2>
+          <p className="mt-1.5 text-base md:text-xl text-tpGrey">Our 3 Pillars for Building Entrepreneurs</p>
         </div>
 
         <div className="mt-11 grid md:grid-cols-3 gap-6 md:gap-12">

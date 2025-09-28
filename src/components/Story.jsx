@@ -6,8 +6,8 @@ export default function Story() {
     <section id="about" className="section bg-[#101010]">
       <div className="container-tight">
         <div className="text-center">
-          <div className="font-variant-small-caps text-3xl tracking-wide text-cream font-bold">The 20Pounds <span className="!font-dancingScript text-gold [font-variant-caps:normal]">Story</span></div>
-          <p className="mt-1.5 text-xl text-tpGrey">From a fading tradition to a digital future</p>
+          <div className="font-variant-small-caps text-3xl md:text-4xl tracking-wide text-cream font-bold">The 20Pounds <span className="!font-dancingScript text-gold [font-variant-caps:normal]">Story</span></div>
+          <p className="mt-1.5 text-base md:text-xl text-tpGrey">From a fading tradition to a digital future</p>
         </div>
 
         <div className="mt-11 grid md:grid-cols-2 gap-8 items-center">

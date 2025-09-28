@@ -38,7 +38,7 @@ body {
   @apply inline-flex items-center justify-center px-6 py-2.5 rounded-[5px] font-semibold border border-gold text-gold hover:bg-gold hover:text-tpBlack transition cursor-pointer;
 }
 .container-tight {
-  @apply max-w-6xl mx-auto px-4;
+  @apply max-w-6xl mx-auto px-5;
 }
 .section {
   @apply py-16 md:py-24;

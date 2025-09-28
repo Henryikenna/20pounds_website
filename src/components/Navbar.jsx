@@ -22,23 +22,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky max-w-6xl mx-auto px-3 lg:px-6 top-0 lg:top-10 z-40 backdrop-blur border border-tpGrey/20 bg-[#1D1D1D87] rounded-b-lg lg:rounded-[10px]">
-      <div className="flex h-24 items-center justify-between gap-5 lg:gap-0">
-        {/* Mobile Menu Button */}
-        <button
-          onClick={toggleMobileMenu}
-          className="md:hidden p-2 text-cream hover:text-gold transition-colors"
-          aria-label="Toggle mobile menu"
-        >
-          
-            {isMobileMenuOpen ? (
-              <IoClose className="text-3xl" />
-            ) : (
-              <IoMenu className="text-3xl" />
-            )}
-        </button>
-
-
+    <header className="sticky max-w-6xl md:mx-auto mx-5 px-3 lg:px-6 top-5 lg:top-10 z-40 backdrop-blur border border-tpGrey/20 bg-[#1D1D1D87] rounded-[10px]">
+      <div className="flex h-20 md:h-24 items-center justify-between gap-5 lg:gap-0">
         <Link to="/">
           <img src={Logo} alt="" className="w-full md:w-40" />
         </Link>
@@ -62,15 +47,26 @@ export default function Navbar() {
               Contact Us
             </Link>
           </nav>
-          <button className="btn hidden sm:inline-flex">Get Started</button>
+          <button className="btn !hidden md:!block">Get Started</button>
         </section>
 
-        
+        {/* Mobile Menu Button */}
+        <button
+          onClick={toggleMobileMenu}
+          className="md:hidden p-2 text-cream hover:text-gold transition-colors"
+          aria-label="Toggle mobile menu"
+        >
+          {isMobileMenuOpen ? (
+            <IoClose className="text-3xl" />
+          ) : (
+            <IoMenu className="text-3xl" />
+          )}
+        </button>
       </div>
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 mt-2 mx-6 bg-[#1D1D1D] border border-tpGrey/20 rounded-lg backdrop-blur-lg shadow-lg overflow-hidden">
+        <div className="md:hidden absolute top-full left-0 right-0 mt-2 mx-5 bg-[#1D1D1D] border border-tpGrey/20 rounded-lg backdrop-blur-lg shadow-lg overflow-hidden">
           <nav className="flex flex-col py-4">
             <a
               href="/#about"

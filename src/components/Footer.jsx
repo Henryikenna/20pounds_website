@@ -16,15 +16,15 @@ export default function Footer() {
     <footer className="bg-tpBlack border-t border-tpGrey">
       {/* Main footer content */}
       <div className="container-tight py-16">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        {/* <div className="grid md:grid-cols-2 gap-12 items-start"> */}
+        <div className="flex flex-col md:flex-row justify-between gap-12 items-start">
           {/* Left side - Logo and tagline */}
-          <div>
+          <div className='w-1/2'>
             <img src={Logo} alt="" className="w-40 mb-1" />
             <p className="text-cream text-lg leading-relaxed mb-8 max-w-md">
               Building Africa's Next Generation of Entrepreneurs
             </p>
             
-            {/* Social media icons */}
             <div className="flex gap-4">
               <a 
                 href="#" 
@@ -68,8 +68,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Right side - Newsletter */}
-          <div className='w-2/3'>
+          <div className='w-full md:w-1/2'>
             <h3 className="text-xl font-semibold text-cream mb-4">
               Subscribe to our newsletter
             </h3>

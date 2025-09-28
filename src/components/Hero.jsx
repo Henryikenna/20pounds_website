@@ -60,7 +60,7 @@ export default function Hero() {
     <section className="section">
       <div className="container-tight">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="font-variant-small-caps font-bold text-5xl md:text-5xl">
+          <h1 className="font-variant-small-caps font-bold text-4xl md:text-6xl">
             <span className=" tracking-wide">Building Africa's Next</span>
             <br />
             <span className="">
@@ -70,12 +70,12 @@ export default function Hero() {
               </span>
             </span>
           </h1>
-          <p className="mt-4 text-tpGrey">
+          <p className="mt-5 text-tpGrey">
             We merge Africa's traditional apprenticeship model with the scale of
             digital learning to empower young people with skills, mentorship,
             and funding.
           </p>
-          <div className="mt-6 flex items-center justify-center gap-3">
+          <div className="mt-8 md:mt-12 flex flex-col md:flex-row items-center justify-center gap-3">
             <button className="btn">Apply Now</button>
             <button className="btn-outline">Become a Volunteer</button>
           </div>
@@ -87,7 +87,7 @@ export default function Hero() {
           ))}
         </div> */}
 
-        <div className="mt-10 grid h-[450px] grid-cols-5 grid-rows-2 gap-3 auto-rows-min">
+        <div className="mt-12 md:mt-24 grid h-[450px] grid-cols-5 grid-rows-2 gap-3 auto-rows-min">
           {gallery.map((image, idx) => (
             <img
               key={idx}

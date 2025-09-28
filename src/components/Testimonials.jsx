@@ -41,13 +41,13 @@ export default function Testimonials() {
   return (
     <section className="section">
       <div className="container-tight text-center">
-        <h2 className="font-variant-small-caps text-2xl tracking-wide font-bold">
+        <h2 className="font-variant-small-caps text-3xl md:text-4xl tracking-wide font-bold">
           Our Success{" "}
           <span className="!font-dancingScript text-gold [font-variant-caps:normal]">
             Stories
           </span>
         </h2>
-        <p className="mt-1.5 text-xl text-tpGrey">
+        <p className="mt-1.5 text-base md:text-xl text-tpGrey">
           Stories of Youth Turning Dreams into Reality
         </p>
 
