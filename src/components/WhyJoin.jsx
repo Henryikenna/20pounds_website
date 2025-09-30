@@ -20,7 +20,7 @@ export default function WhyJoin() {
             {bullets.map((b, i) => (
               <li key={i} className="flex items-center gap-3">
                 <img src={WhyJoinUsMarker} alt="" className="h-5" />
-                <span className="text-xl md:text-2xl font-semibold">{b}</span>
+                <span className="text-lg md:text-2xl font-semibold">{b}</span>
               </li>
             ))}
           </ul>
