@@ -5,10 +5,9 @@ import HeroImage4 from "../assets/images/hero_imgs/4.png";
 import HeroImage5 from "../assets/images/hero_imgs/5.png";
 import HeroImage6 from "../assets/images/hero_imgs/6.png";
 import HeroImage7 from "../assets/images/hero_imgs/7.png";
+import HeroImageMobile from "../assets/images/hero_image_mobile.png";
 
 export default function Hero() {
-  // const gallery = Array.from({length:6}).map((_,i)=>`https://picsum.photos/seed/20p-${i+1}/280/360`);
-
   const gallery = [
     {
       src: HeroImage1,
@@ -46,14 +45,13 @@ export default function Hero() {
       className:
         "col-span-1 row-span-1 h-full w-full object-cover rounded-[30px_30px_0px_0px]",
     },
-    
+
     {
       src: HeroImage6,
       alt: "Woman studying with a laptop and notebook",
       className:
         "col-span-1 row-span-1 h-full w-full object-cover rounded-[30px_30px_0px_0px]",
     },
-    
   ];
 
   return (
@@ -61,8 +59,8 @@ export default function Hero() {
       <div className="container-tight">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="font-variant-small-caps font-bold text-4xl md:text-6xl">
-            <span className=" tracking-wide">Building Africa's Next</span>
-            <br />
+            <span className=" tracking-wide">Building Africa's Next </span>
+            {/* <br /> */}
             <span className="">
               Generation of{" "}
               <span className="!font-dancingScript text-gold [font-variant-caps:normal]">
@@ -81,13 +79,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* <div className="mt-10 grid grid-cols-3 sm:grid-cols-6 gap-3">
-          {gallery.map((src, idx) => (
-            <img key={idx} src={src} alt="placeholder" className="rounded-lg object-cover w-full h-28 sm:h-40" />
-          ))}
-        </div> */}
-
-        <div className="mt-12 md:mt-24 grid h-[450px] grid-cols-5 grid-rows-2 gap-3 auto-rows-min">
+        <div className="hidden mt-12 md:mt-24 md:grid h-[450px] grid-cols-5 grid-rows-2 gap-3 auto-rows-min">
           {gallery.map((image, idx) => (
             <img
               key={idx}
@@ -96,6 +88,10 @@ export default function Hero() {
               className={image.className}
             />
           ))}
+        </div>
+
+        <div className="block mt-12 md:hidden">
+          <img src={HeroImageMobile} alt="" className="w-full h-auto" />
         </div>
       </div>
     </section>

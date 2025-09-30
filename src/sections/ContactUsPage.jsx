@@ -104,7 +104,8 @@ export default function ContactUsPage() {
 
         {/* Right Side - Contact Form */}
         <div>
-          <div className="bg-cream/5 rounded-xl border border-tpGrey/20 lg:p-8">
+          {/* <div className="bg-cream/5 rounded-xl border border-tpGrey/20 p-2.5 lg:p-8"> */}
+          <div className="md:bg-cream/5 md:rounded-xl md:border md:border-tpGrey/20 md:p-8">
             <h2 className="text-xl font-semibold text-cream mb-6">SEND A MESSAGE</h2>
             
             <div className="space-y-4">

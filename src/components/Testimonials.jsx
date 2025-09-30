@@ -115,7 +115,7 @@ export default function Testimonials() {
         </div>
 
         {/* SLIDER PORTRAIT VERSION */}
-        <div className="max-w-sm mx-auto mt-11 bg-tpBlack block lg:hidden">
+        {/* <div className="max-w-sm mx-auto mt-11 bg-tpBlack block lg:hidden">
           <div className="slider relative">
             <div className="flex justify-between items-center mb-6">
               <button
@@ -159,7 +159,7 @@ export default function Testimonials() {
               </div>
             </div>
 
-            {/* Dots Indicator */}
+
             <div className="flex items-center justify-center gap-3 mt-6">
               {items.map((_, i) => (
                 <button
@@ -172,6 +172,65 @@ export default function Testimonials() {
                 />
               ))}
             </div>
+          </div>
+        </div> */}
+
+
+        <div className="mt-11 bg-tpBlack block lg:hidden px-4">
+          <div className="slider relative flex items-center gap-4">
+            <button
+              onClick={prev}
+              className="z-10 cursor-pointer text-gold hover:text-gold/80 transition-colors flex-shrink-0"
+              aria-label="Previous testimonial"
+            >
+              <IoArrowBackCircleSharp className="text-[2.5rem]" />
+            </button>
+
+            <div className="relative text-center bg-cream text-tpBlack rounded-3xl p-8 min-h-[500px] flex flex-col flex-1">
+              <img src={QuoteIcon} alt="" className="h-[1.375rem] mb-4" />
+
+              <p className="text-lg leading-relaxed mb-8 font-medium flex-grow flex items-center justify-center">
+                {items[index].quote}
+              </p>
+
+              <div className="flex flex-col items-center gap-4">
+                <img
+                  src={items[index].avatar}
+                  alt={items[index].name}
+                  className="w-16 h-16 rounded-full object-cover border-2 border-gold/30"
+                />
+                <div className="text-center">
+                  <div className="font-semibold text-lg text-tpBlack">
+                    {items[index].name}
+                  </div>
+                  <div className="text-tpGrey font-medium text-base">
+                    {items[index].role}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick={next}
+              className="z-10 cursor-pointer text-gold hover:text-gold/80 transition-colors flex-shrink-0"
+              aria-label="Next testimonial"
+            >
+              <IoArrowForwardCircleSharp className="text-[2.5rem]" />
+            </button>
+          </div>
+
+          {/* Dots Indicator */}
+          <div className="flex items-center justify-center gap-3 mt-6">
+            {items.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setIndex(i)}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  i === index ? "bg-gold" : "bg-tpGrey/40"
+                }`}
+                aria-label={`Go to testimonial ${i + 1}`}
+              />
+            ))}
           </div>
         </div>
       </div>

@@ -7,9 +7,7 @@ import ContactUsPage from "./sections/ContactUsPage";
 const router = createBrowserRouter([
   {
     element: (
-      // <ProtectedRoute>
       <AppLayout />
-      // </ProtectedRoute>
     ),
     children: [
       {
