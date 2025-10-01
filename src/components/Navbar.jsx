@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../assets/svg/logo.svg";
+// import Logo from "../assets/svg/logo.svg";
+import Logo from "../assets/images/logo.png";
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 
@@ -25,7 +26,8 @@ export default function Navbar() {
     <header className="sticky max-w-6xl md:mx-auto mx-5 px-3 lg:px-6 top-5 lg:top-10 z-40 backdrop-blur border border-tpGrey/20 bg-[#1D1D1D87] rounded-[10px]">
       <div className="flex h-20 md:h-24 items-center justify-between gap-5 lg:gap-0">
         <Link to="/">
-          <img src={Logo} alt="" className="w-full md:w-40" />
+          {/* <img src={Logo} alt="" className="w-full md:w-40" /> */}
+          <img src={Logo} alt="" className="w-40" />
         </Link>
 
         <section className="flex justify-center gap-16">
