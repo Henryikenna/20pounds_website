@@ -117,7 +117,7 @@ import HeroImage1 from "../assets/images/hero_imgs/1.png";
 import HeroImage2 from "../assets/images/hero_imgs/2.png";
 import HeroImage3 from "../assets/images/hero_imgs/3.png";
 // import HeroImage4 from "../assets/images/hero_imgs/4.png";
-import HeroImage4 from "../assets/images/hero_imgs/4.jpg";
+import HeroImage4 from "../assets/images/hero_imgs/40.jpg";
 import HeroImage5 from "../assets/images/hero_imgs/5.png";
 import HeroImage6 from "../assets/images/hero_imgs/6.png";
 import HeroImage7 from "../assets/images/hero_imgs/7.png";
